@@ -1,0 +1,6 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers locaux contenant des secrets éventuels
+.env

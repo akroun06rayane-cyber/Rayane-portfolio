@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Rayane Akroun</title>
+
+  <!-- 1. Bootstrap CSS (grille responsive) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Icônes des technologies (Devicon) -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <!-- 2. Notre charte graphique (chargée après Bootstrap) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg container" aria-label="Navigation principale">
+      <a class="navbar-brand" href="#hero">Rayane Akroun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#veille">Veille</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO : texte à gauche, photo à droite ===== -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- Partie gauche : informations -->
+          <div class="col-12 col-lg-7 order-2 order-lg-1">
+            <p class="hero-kicker"></p>
+            <h1>Rayane Akroun</h1>
+            <p class="hero-subtitle">Étudiant en BTS SIO — option SLAM</p>
+            <p class="hero-tagline">
+              L'informatique n'est pas un choix par défaut. C'est une passion que j'ai construite, nourrie et que je continue d'approfondir chaque jour.
+            </p>
+
+            <ul class="hero-facts">
+              <li><span>Formation</span> BTS SIO SLAM</li>
+              <li><span>Statut</span> En cours (2025 – 2027)</li>
+              <li><span>Domaine</span> Développement Web</li>
+            </ul>
+
+            <div class="hero-actions">
+              <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+              <a href="assets/documents/cv1.pdf" class="btn btn-outline-primary">Consulter mon CV</a>
+            </div>
+          </div>
+
+          <!-- Partie droite : photo -->
+          <div class="col-12 col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+            <div class="hero-photo">
+              <span class="hero-photo-fallback" aria-hidden="true">RA</span>
+              <img src="assets/images/ma_photo.jpeg" alt="Portrait de Rayane Akroun" onerror="this.remove()">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section section-alt">
+      <div class="container">
+        <h2>À propos</h2>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-7 about-text">
+            <p>
+              Je me forme aux métiers du développement logiciel et des applications métiers. Mon quotidien, c'est concevoir, coder, tester et améliorer — avec une vraie exigence sur la qualité du code produit.
+
+              En parallèle de ma formation, je travaille sur des projets concrets, seul ou en équipe, et je vise à terme à lancer ma propre activité.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <div class="info-card highlights">
+              <ul>
+                <li><span>Spécialité</span> Développement Web</li>
+                <li><span>Formation</span> BTS SIO — option SLAM</li>
+                <li><span>Approche</span> Projets concrets, seul ou en équipe</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMATION : BTS SIO, SLAM et SISR ===== -->
+    <section id="formation" class="section">
+      <div class="container">
+        <h2>Formation</h2>
+
+        <div class="mb-5">
+          <h3 class="formation-title">BTS SIO — Services Informatiques aux Organisations</h3>
+          <p>
+            Le BTS SIO est un diplôme national de niveau bac+2, préparé en deux ans après l'obtention du baccalauréat.
+            Il forme aux métiers de l'informatique en entreprise : administration des systèmes, développement d'applications,
+            gestion des réseaux et sécurité informatique. La première année est commune à tous les étudiants (tronc commun),
+            puis une option de spécialisation est choisie en deuxième année afin d'orienter les enseignements et les
+            compétences professionnelles visées. La formation alterne cours théoriques, travaux pratiques en laboratoire
+            et stages en entreprise, permettant d'acquérir une expérience concrète du milieu professionnel.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="option-card h-100">
+              <span class="option-code">SLAM</span> <span class="tag">Mon option</span>
+              <h3>Solutions Logicielles et Applications Métiers</h3>
+              <p>
+                Option tournée vers le développement logiciel : conception, programmation et maintenance
+                d'applications web et mobiles, gestion et modélisation des bases de données, intégration
+                de services web et d'API REST. Les étudiants apprennent à analyser les besoins d'un client,
+                à rédiger des spécifications fonctionnelles et techniques, puis à développer des solutions
+                adaptées en respectant les bonnes pratiques du génie logiciel (tests unitaires, versionnage,
+                documentation).
+              </p>
+              <p class="option-meta">Métiers visés : développeur d'applications, développeur web / backend, intégrateur d'applications.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="option-card h-100">
+              <span class="option-code">SISR</span>
+              <h3>Solutions d'Infrastructure, Systèmes et Réseaux</h3>
+              <p>
+                Option tournée vers l'infrastructure informatique : installation, administration et supervision
+                des systèmes d'exploitation (Linux, Windows Server), gestion des réseaux locaux et étendus,
+                virtualisation des serveurs, mise en place de solutions de sauvegarde et de haute disponibilité.
+                Les étudiants apprennent également à sécuriser les infrastructures (pare-feu, VPN, détection
+                d'intrusion) et à rédiger des procédures d'exploitation et de maintenance.
+              </p>
+              <p class="option-meta">Métiers visés : administrateur systèmes et réseaux, technicien d'infrastructure, responsable de parc informatique.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES (filtrables) ===== -->
+    <section id="competences" class="section section-alt">
+      <div class="container">
+        <h2>Compétences</h2>
+
+<div class="filters" id="skillFilters" role="group" aria-label="Filtrer les compétences">
+  <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Toutes</button>
+  <button type="button" class="filter-btn" data-filter="langages" aria-pressed="false">Langages</button>
+  <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+  <button type="button" class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+  <button type="button" class="filter-btn" data-filter="bdd" aria-pressed="false">Bases de données</button>
+  <!-- ★ Nouveau filtre IA ici -->
+  <button type="button" class="filter-btn" data-filter="ia" aria-pressed="false">IA</button>
+  <button type="button" class="filter-btn" data-filter="outils" aria-pressed="false">Outils</button>
+  <button type="button" class="filter-btn" data-filter="methodes" aria-pressed="false">Méthodes</button>
+</div>
+
+        <div class="tech-grid" id="skillGrid">
+          <div class="tech skill-item" data-category="langages" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="Python — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'P'}))"><span>Python</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+                    <!-- ★ Compétence IA 1 : Google Colab -->
+          <div class="tech skill-item" data-category="outils" data-level="70" style="--level:70%" role="button" tabindex="0" aria-expanded="false" aria-label="Google Colab — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'G'}))"><span>Google Colab</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">70%</span>
+            </div>
+          </div>
+
+          <!-- ★ Compétence IA 2 : Prompt Engineering & Assistance (ChatGPT, Copilot...) -->
+          <div class="tech skill-item" data-category="ia" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="IA Générative & Prompts — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/openai/412991" alt="IA & Prompts" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'I'}))"><span>IA & Prompts</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="PHP — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'P'}))"><span>PHP</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="70" style="--level:70%" role="button" tabindex="0" aria-expanded="false" aria-label="Java — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/java/ED8B00" alt="Java" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'J'}))"><span>Java</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">70%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="C — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'C'}))"><span>C</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="60" style="--level:60%" role="button" tabindex="0" aria-expanded="false" aria-label="Shell — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Shell" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'S'}))"><span>Shell</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">60%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="70" style="--level:70%" role="button" tabindex="0" aria-expanded="false" aria-label="JavaScript — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'J'}))"><span>JavaScript</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">70%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="langages" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="LaTeX — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/latex/008080" alt="LaTeX" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'L'}))"><span>LaTeX</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="web" data-level="80" style="--level:80%" role="button" tabindex="0" aria-expanded="false" aria-label="HTML5 — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'H'}))"><span>HTML5</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">80%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="web" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="CSS3 — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'C'}))"><span>CSS3</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="web" data-level="70" style="--level:70%" role="button" tabindex="0" aria-expanded="false" aria-label="Bootstrap — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'B'}))"><span>Bootstrap</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">70%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="backend" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="Spring Boot — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/spring/6DB33F" alt="Spring Boot" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'S'}))"><span>Spring Boot</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="backend" data-level="60" style="--level:60%" role="button" tabindex="0" aria-expanded="false" aria-label="Gradle — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/gradle/02303A" alt="Gradle" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'G'}))"><span>Gradle</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">60%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="backend" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="Swagger — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/swagger/85EA2D" alt="Swagger" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'S'}))"><span>Swagger</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="bdd" data-level="70" style="--level:70%" role="button" tabindex="0" aria-expanded="false" aria-label="MySQL — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'M'}))"><span>MySQL</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">70%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="bdd" data-level="60" style="--level:60%" role="button" tabindex="0" aria-expanded="false" aria-label="MongoDB — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'M'}))"><span>MongoDB</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">60%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="bdd" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="Firebase — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'F'}))"><span>Firebase</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="outils" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="Git — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'G'}))"><span>Git</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="outils" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="GitHub — cliquer pour voir le niveau">
+            <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="tech-logo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'tech-logo-fallback',textContent:'G'}))"><span>GitHub</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="outils" data-level="75" style="--level:75%" role="button" tabindex="0" aria-expanded="false" aria-label="Microsoft Office — cliquer pour voir le niveau">
+            <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg><span>Microsoft Office</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">75%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="methodes" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="Gestion de projet — cliquer pour voir le niveau">
+            <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg><span>Gestion de projet</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+          <div class="tech skill-item" data-category="methodes" data-level="65" style="--level:65%" role="button" tabindex="0" aria-expanded="false" aria-label="Agilité (Scrum) — cliquer pour voir le niveau">
+            <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg><span>Agilité (Scrum)</span>
+            <div class="skill-bar" aria-hidden="true">
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              <span class="skill-bar-value">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RÉALISATIONS (filtrables) ===== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2>Projets</h2>
+
+        <div class="filters" id="projectFilters" role="group" aria-label="Filtrer les réalisations">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" class="filter-btn" data-filter="academique" aria-pressed="false">Académiques</button>
+          <button type="button" class="filter-btn" data-filter="professionnel" aria-pressed="false">Professionnels</button>
+          <button type="button" class="filter-btn" data-filter="personnel" aria-pressed="false">Personnels</button>
+        </div>
+
+        <div class="row g-4" id="projectGrid">
+
+          <div class="col-12 col-md-6 project-item" data-category="professionnel">
+            <article class="project-card h-100">
+              <div class="project-shot">
+                <span class="project-shot-fallback">Capture à ajouter</span>
+                <img src="assets/images/projects/edusio.png" alt="Capture d'écran du projet EduSIO" onerror="this.remove()">
+              </div>
+              <div class="project-card-body">
+                <span class="tag">Professionnel</span>
+                <h3>EduSIO</h3>
+                <p class="project-meta"><strong>Contexte :</strong> projet collaboratif — backend Spring Boot pour une plateforme d'apprentissage (module Administration Orchestrator).</p>
+                <p class="project-meta"><strong>Mon rôle :</strong> développeur API (Student 4) — implémentation des couches REST.</p>
+                <p class="project-meta"><strong>Technologies :</strong> Spring Boot, Java, MongoDB, Gradle, Swagger.</p>
+                <div class="project-links mt-auto">
+                  <a href="https://github.com/souraya21/smart-learning-platform-backend" class="btn btn-outline-primary btn-sm">Voir le dépôt GitHub</a>
+                  <a href="assets/documents/cahier-des-charges-edusio.pdf" class="btn btn-doc btn-sm">Cahier des charges</a>
+                  <a href="assets/documents/edusio-documents.pdf" class="btn btn-doc btn-sm">Documents associés</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 project-item" data-category="personnel">
+            <article class="project-card h-100">
+              <div class="project-shot">
+                <span class="project-shot-fallback">Capture à ajouter</span>
+                <img src="assets/images/cptr-rt.png" alt="Capture d'écran de RT Transport — Pointage" onerror="this.remove()">
+              </div>
+              <div class="project-card-body">
+                <span class="tag">Personnels</span>
+                <h3>RT Transport — Pointage</h3>
+                <p class="project-meta"><strong>Contexte :</strong> application de pointage pour une entreprise de transport.</p>
+                <p class="project-meta"><strong>Mon rôle :</strong> conception et développement complet (application mono-fichier).</p>
+                <p class="project-meta"><strong>Technologies :</strong> HTML5, CSS3, JavaScript, Firebase Realtime Database, Web Crypto API.</p>
+                <div class="project-links mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Voir le dépôt GitHub</a>
+                  <a href="assets/documents/cahier-des-charges-rt-pointage.pdf" class="btn btn-doc btn-sm">Cahier des charges</a>
+                  <a href="assets/documents/rt-pointage-documents.pdf" class="btn btn-doc btn-sm">Documents associés</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 project-item" data-category="academique">
+            <article class="project-card h-100">
+              <div class="project-shot">
+                <span class="project-shot-fallback">Capture à ajouter</span>
+                <img src="assets/images/projects/gestion-clinique.png" alt="Capture d'écran du projet Gestion Clinique" onerror="this.remove()">
+              </div>
+              <div class="project-card-body">
+                <span class="tag">Académique</span>
+                <h3>Gestion Clinique</h3>
+                <p class="project-meta"><strong>Contexte :</strong> projet d'école : application de gestion pour une clinique (patients, rendez-vous, dossiers médicaux). — à compléter/vérifier.</p>
+                <p class="project-meta"><strong>Mon rôle :</strong> développement collaboratif en BTS SIO — à préciser (backend, base de données, interface...).</p>
+                <p class="project-meta"><strong>Technologies :</strong> PHP, MySQL, HTML, CSS — à confirmer.</p>
+                <div class="project-links mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Voir le dépôt GitHub</a>
+                  <a href="assets/documents/cahier-des-charges-gestion-clinique.pdf" class="btn btn-doc btn-sm">Cahier des charges</a>
+                  <a href="assets/documents/gestion-clinique-documents.pdf" class="btn btn-doc btn-sm">Documents associés</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 project-item" data-category="academique">
+            <article class="project-card h-100">
+              <div class="project-shot">
+                <span class="project-shot-fallback">Capture à ajouter</span>
+                <img src="assets/images/voisinpartage.png" alt="Capture d'écran du projet VoisinPartage" onerror="this.remove()">
+              </div>
+              <div class="project-card-body">
+                <span class="tag">Académique</span>
+                <h3>VoisinPartage</h3>
+                <p class="project-meta"><strong>Contexte :</strong> projet d'école : plateforme de partage entre voisins (objets, services, annonces). — à compléter/vérifier.</p>
+                <p class="project-meta"><strong>Mon rôle :</strong> développement collaboratif en BTS SIO — à préciser (backend, base de données, interface...).</p>
+                <p class="project-meta"><strong>Technologies :</strong> PHP, MySQL, HTML, CSS — à confirmer.</p>
+                <div class="project-links mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Voir le dépôt GitHub</a>
+                  <a href="assets/documents/cahier_de_charge_voisinpartage.pdf" class="btn btn-doc btn-sm">Cahier des charges</a>
+                  <a href="assets/documents/voisinpartage-doc.pdf" class="btn btn-doc btn-sm">Documents associés</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <p id="emptyMessage" class="empty-message" hidden>
+          Aucune réalisation dans cette catégorie pour le moment.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PARCOURS : frise verticale alternée ===== -->
+    <section id="parcours" class="section section-alt">
+      <div class="container">
+        <h2>Parcours</h2>
+
+        <div class="timeline">
+          <div class="timeline-item right">
+            <div class="timeline-card">
+              <span class="timeline-date">2025-2027</span>
+              <h3>BTS Services Informatiques aux Organisations</h3>
+              <p class="timeline-place">Option SLAM — Scholia Paris (France)</p>
+              <p>Algorithmique, programmation orientée objet, conception et modélisation de bases de données, agilité.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <span class="timeline-date">2024 – 2025</span>
+              <h3>Première année de Licence en Informatique</h3>
+              <p class="timeline-place">Faculté des Sciences — Université Mouloud Mammeri de Tizi Ouzou (Algérie)</p>
+              <p>Fondations théoriques de l'informatique, algèbre et outils mathématiques, structures de données.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-card">
+              <span class="timeline-date">2023 – 2024</span>
+              <h3>Baccalauréat Technique Mathématiques</h3>
+              <p class="timeline-place">Option Génie Civil — Lycée Frère Hanouti, Bouzguène (Algérie)</p>
+              <p>Formation technique avec une base solide en mathématiques, logique et résolution de problèmes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VEILLE TECHNOLOGIQUE ===== -->
+    <!-- ===== VEILLE TECHNOLOGIQUE ===== -->
+<section id="veille" class="section">
+  <div class="container">
+    <h2>Veille technologique</h2>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-6">
+        <article class="info-card h-100">
+          <span class="tag">01</span>
+          <h3>La cybersécurité face à l'IA</h3>
+          <p>
+            Dans le cadre de ma veille technologique, j'ai choisi de suivre l'évolution 
+            de la cybersécurité face à l'intelligence artificielle. D'un côté, l'IA 
+            devient un outil puissant pour détecter les menaces, analyser les comportements 
+            suspects et automatiser la réponse aux incidents de sécurité. De l'autre, 
+            elle est également exploitée par des acteurs malveillants pour concevoir des 
+            attaques plus sophistiquées, contourner les systèmes de défense et automatiser 
+            les intrusions à grande échelle. Comprendre ces deux faces de l'IA appliquée 
+            à la sécurité informatique est devenu indispensable pour tout professionnel 
+            du secteur.
+          </p>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- ===== CV & CONTACT : côte à côte ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="row g-4">
+
+          <!-- Côté gauche : CV -->
+          <div class="col-12 col-lg-5" id="cv">
+            <div class="cv-card h-100">
+              <svg class="cv-icon" viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 2v6h6M8 13h8M8 17h5"></path>
+              </svg>
+              <h3>Mon CV</h3>
+              <p>Je suis actuellement à la recherche d'une alternance dans le développement web ou applicatif. 
+Si mon profil vous intéresse, mon CV vous donnera une vision complète de mon parcours et de mes 
+compétences — n'hésitez pas à me contacter.</p>
+              <!-- ★ Les deux boutons ont la même largeur et sont sur la même ligne -->
+              <div class="cv-actions">
+                <a href="assets/documents/cv1.pdf" download class="btn btn-primary cv-btn">Télécharger (PDF)</a>
+                <a href="assets/documents/cv1.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary cv-btn">Ouvrir</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Côté droit : formulaire de contact sécurisé -->
+          <div class="col-12 col-lg-7">
+            <form id="contactForm" class="contact-form h-100" novalidate>
+              <h3></h3>
+
+              <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+              <input type="hidden" name="subject" value="Nouveau message depuis mon portfolio">
+              <input type="hidden" name="from_name" value="Portfolio BTS SIO">
+
+              <!-- Piège anti-robot -->
+              <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off">
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" id="name" name="name" class="form-control"
+                  placeholder="Ex : Jean Dupont"
+                  required maxlength="80" autocomplete="name">
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" id="email" name="email" class="form-control"
+                  placeholder="mail@gmail.com"
+                  required maxlength="120" autocomplete="email">
+              </div>
+
+              <!-- ★ Nouveau champ Sujet -->
+              <div class="mb-3">
+                <label for="subject_user" class="form-label">Sujet</label>
+                <input type="text" id="subject_user" name="subject_user" class="form-control"
+                  placeholder="Ex : Proposition de stage, Question sur un projet…"
+                  required maxlength="120">
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5"
+                  placeholder="Bonjour Rayane, je vous contacte au sujet de…"
+                  required minlength="10" maxlength="2000"></textarea>
+              </div>
+
+              <!-- Captcha hCaptcha -->
+              <div class="h-captcha mb-3" data-captcha="true"></div>
+
+              <button type="submit" class="btn btn-primary w-100" id="submitBtn">Envoyer le message</button>
+              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li>
+          <a href="mailto:akrouno6rayane@gmail.com" class="footer-icon" aria-label="M'envoyer un e-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="5" width="19" height="14" rx="2"></rect>
+              <path d="m3 6.5 9 6 9-6"></path>
+            </svg>
+            <span class="sr-only">akrouno6rayane@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rayane-akroun-6b6a51376/" target="_blank" rel="noopener"
+            class="footer-icon footer-icon--linkedin" aria-label="Mon profil LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/>
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/akroun06rayane-cyber" target="_blank" rel="noopener"
+            class="footer-icon" aria-label="Mon profil GitHub">
+            <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2026 Rayane Akroun — Portfolio BTS SIO</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Web3Forms (hCaptcha) -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <!-- Notre JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
